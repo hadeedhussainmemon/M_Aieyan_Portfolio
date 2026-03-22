@@ -180,7 +180,7 @@ export default function Home() {
           padding: '0 2rem',
           position: 'relative',
           overflow: 'hidden'
-        }}>
+        }} aria-label="Muhammad Aieyan Channa - Petrochemical Engineering Hero Image">
           <div className="particle-bg" />
           
           <div className="reveal" style={{ 
@@ -257,6 +257,14 @@ export default function Home() {
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>2020 — 2023</div>
                 <h3>PAINT MASTER'S FACTORY</h3>
                 <p style={{ color: 'var(--text-secondary)' }}>Inventory Clerk & Cashier. Managed industrial logistics and accurate sales reporting.</p>
+              </div>
+
+              {/* Added Bio for SEO Authority */}
+              <div style={{ marginTop: '4rem', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderLeft: '2px solid var(--accent-safety)' }}>
+                <h4 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '1rem' }}>BIO_SUMMARY://MUHAMMAD_AIEYAN_CHANNA</h4>
+                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+                  <strong>Muhammad Aieyan Channa</strong> is a forward-thinking student of <strong>Polymer and Petrochemical Engineering</strong> at NED University. With a strong foundation in industrial logistics from his time at <strong>Paint Master's Factory</strong> and a passion for academic instruction at <strong>Sir Yasir Schooling System</strong>, Aieyan is dedicated to advancing the field of material science through research and process optimization. This portfolio serves as the definitive digital presence for <strong>Muhammad Aieyan Channa</strong>, showcasing his academic milestones and technical research within the petrochemical sector.
+                </p>
               </div>
             </div>
 

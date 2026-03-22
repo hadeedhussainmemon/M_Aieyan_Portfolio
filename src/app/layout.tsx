@@ -3,8 +3,13 @@ import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Muhammad Aieyan Channa | Petrochemical & Polymer Engineering Student",
-  description: "Muhammad Aieyan Channa is a Petrochemical and Polymer Engineering student at NED University. Exploring process optimization, material science, and industrial engineering.",
-  keywords: ["Muhammad Aieyan Channa", "Aieyan Channa", "Petrochemical Engineering Student", "NED University Student", "Polymer Engineering Student Karachi"],
+  description: "Official portfolio of Muhammad Aieyan Channa, a Petrochemical and Polymer Engineering student at NED University. Expert in process design, plastics, and industrial safety.",
+  keywords: [
+    "Muhammad Aieyan Channa", "Aieyan Channa", "Muhammad Aieyan Channa NED", 
+    "Muahmmad Aieyan Channa", "Aiayan Channa", "Aeiyan Channa", "Aeiyan Memon", 
+    "Petrochemical Engineering Student", "NED University Portfolio", 
+    "Polymer specialist Karachi", "Muhammad Aieyan Channa NEDUET"
+  ],
   authors: [{ name: "Muhammad Aieyan Channa" }],
   metadataBase: new URL('https://muhammadaieyanchanna.vercel.app'),
   alternates: {
@@ -14,8 +19,8 @@ export const metadata: Metadata = {
     icon: '/icon.png',
   },
   openGraph: {
-    title: "Muhammad Aieyan Channa | Engineering Student",
-    description: "Technical portfolio of Muhammad Aieyan Channa, a Petrochemical and Polymer Engineering student at NED University.",
+    title: "Muhammad Aieyan Channa | Petrochemical & Polymer Engineering Student",
+    description: "The official technical profile of Muhammad Aieyan Channa at NED University. Exploring the future of Petrochemical & Polymer industries.",
     url: "https://muhammadaieyanchanna.vercel.app",
     siteName: "Muhammad Aieyan Portfolio",
     images: [
