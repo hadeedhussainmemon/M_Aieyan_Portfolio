@@ -1,61 +1,75 @@
-# Your Name – Polymer & Petrochemical Engineering Portfolio
+# [ MUHAMMAD_AIEYAN_CHANNA // PORTFOLIO_V3.0 ]
 
-[![GitHub license](https://img.shields.io/github/license/yourusername/yourrepo)](LICENSE) [![GitHub Last Commit](https://img.shields.io/github/last-commit/yourusername/yourrepo)]() [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/yourprofile)
-
-**About This Site:**  
-This is a personal portfolio website for **Your Name**, a Polymer & Petrochemical Engineering student. It showcases projects, research, publications, lab skills, and experiences in the field. The site is built as a static site (HTML/CSS/JS) with modern design and responsive layout, hosted on [GitHub Pages/Netlify].
-
-## Audience & Goals
-
-The target audience includes recruiters, professors, and engineering peers. The site aims to **highlight my skills** (process simulation, polymer synthesis, safety practices), **feature projects** (e.g. reactor design, distillation analysis), and **share research/publications** (papers on polymer blends, catalyst development). It also provides a **downloadable CV**, contact info, and links to resources.
-
-## Sections Overview
-
-- **Home:** Introduction with background and navigation links.
-- **About:** Education (B.S., certifications), interests.
-- **Projects:** Descriptions of design and lab projects. Contains images and data.  
-- **Research & Publications:** Summaries and citations of research work.  
-- **Skills:** List of technical & software skills (Aspen, MATLAB, SolidWorks, FTIR, etc.).  
-- **Resume:** PDF of curriculum vitae with key highlights (GPA, honors, internships).  
-- **Blog/Notes:** (If applicable) Posts on engineering topics.  
-- **Gallery:** Collection of figures (PFDs, charts, lab photos) with captions.  
-- **Resources:** Links to tools, standards, and references.  
-- **Contact:** Email and social links.
-
-## Design & UX
-
-The site uses a clean, professional color scheme (e.g. navy and gray with orange accents) and readable fonts (Roboto/Source Sans). Animations are subtle: sections fade in on scroll, images have hover effects, and navigation is smooth. A CSS scroll-snap gallery displays project images, with keyboard controls for accessibility.
-
-Accessibility is a priority: semantic HTML, alt text for all images, and sufficient contrast (WCAG AA). The design is fully responsive (mobile-first) and tested on various devices. An emphasis on simplicity ensures quick load times and strong SEO performance.
-
-## Deployment & SEO
-
-This static site is deployed via GitHub Pages (or Netlify). All pages have unique titles and meta descriptions. A `sitemap.xml` is generated, and `robots.txt` allows crawling. Images are optimized (WebP/PNG) with descriptive file names and alt text. Google Search Console is used for indexing. The code repository includes README badges for license and recent activity.
-
-## File Structure
-
-```
-portfolio-website/
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/ (diagrams, photos)
-├── index.html
-├── main.js
-├── index.css
-├── resume.pdf
-└── README.md
-```
-
-## Checklists
-
-- **Content:** All sections written, proofread, with field terminology (e.g. *distillation column, polymer matrix*).  
-- **Accessibility:** Run a WCAG checker (ensure alt text, color contrast ≥4.5:1, headings hierarchy).  
-- **Performance:** Images compressed (TinyPNG), CSS/JS minified.  
-- **Responsive:** Test on phone and tablet.  
-- **Deployment:** Site building/publishing without errors; custom domain (if any) set via `CNAME`.  
-
-Feedback and suggestions are welcome!  
+An ultra-modern, high-fidelity professional portfolio designed for **Muhammad Aieyan Channa**, a Petrochemical and Polymer Engineering **student** at **NED University of Engineering & Technology**. Built with a focus on industrial aesthetics, technical precision, and maximum search engine discoverability.
 
 ---
-*Last updated: 2026-03-22*
+
+## 🛠 TECH_SPECIFICATIONS
+
+| COMPONENT | TECHNOLOGY |
+| :--- | :--- |
+| **Framework** | Next.js 14 (App Router) |
+| **Language** | TypeScript (Strict Mode) |
+| **Styling** | Vanilla CSS (Modular) |
+| **Animation** | Custom IntersectionObserver + CSS Keyframes |
+| **SEO** | JSON-LD Schema + Next.js Metadata API |
+| **Deployment** | Vercel Optimized |
+
+---
+
+## ✨ PREMIUM_FEATURES
+
+- **[ BOOT_SEQUENCE ]**: A high-tech terminal emulation loader that initializes the site with industrial telemetry data.
+- **[ MAGNETIC_UI ]**: Physically accurate interactive buttons that 'pull' toward the user's cursor for a premium tactile feel.
+- **[ PARTICLE_HERO ]**: A dynamic, reacting grid background that enhances the technical atmosphere of the Hero section.
+- **[ GLASS_NOISE ]**: Advanced glassmorphism components with subtle grain textures for increased depth and realism.
+- **[ SCANLINE_DIVIDERS ]**: Animated industrial scanlines that move throughout the page to simulate a data-driven environment.
+
+---
+
+## 🔍 SEO_STRATEGY
+
+The portfolio is engineered for maximum searchability using modern techniques:
+- **Resilient Search**: Indexed for common misspellings (**Aeiyan**) and variations (**Aieyan Channa**, **Aieyan Memon**).
+- **Rich Snippets**: Comprehensive **JSON-LD Schema (Person)** including institutional data (NED University) and engineering expertise (`knowsAbout`).
+- **structural Indexing**: Validated `robots.txt` and `sitemap.xml` for efficient crawler mapping.
+- **Social Fidelity**: Custom high-fidelity **Open Graph (OG)** images for professional LinkedIn and WhatsApp sharing.
+
+---
+
+## 🚀 GETTING_STARTED
+
+### 01_INSTALLATION
+```bash
+npm install
+```
+
+### 02_DEVELOPMENT
+```bash
+npm run dev
+```
+
+### 03_PRODUCTION_BUILD
+```bash
+npm run build
+```
+
+---
+
+## 📂 PROJECT_STRUCTURE
+
+```text
+src/
+├── app/            # Next.js 14 App Router (Layout & SEO)
+├── components/     # High-fidelity UI components
+├── styles/         # Global design system & animations
+public/
+├── images/         # Optimized assets & OG media
+├── Aieyan-CV.pdf   # Integrated Resume
+└── sitemap.xml     # Search mapping
+```
+
+---
+
+## 🛡 LICENSE
+MIT // [MUHAMMAD_AIEYAN] (c) 2026. All data secured and verified.

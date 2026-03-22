@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Muhammad Aieyan | Petrochemical & Polymer Engineering Specialist",
-  description: "Explore the professional portfolio of Muhammad Aieyan (also known as Aieyan Channa or Aieyan Memon), a dedicated Petrochemical and Polymer Engineering specialist at NED University.",
-  keywords: ["Muhammad Aieyan", "Aieyan Channa", "Aieyan Memon", "Aeiyan Channa", "Aeiyan Memon", "Aeiyan", "Petrochemical Engineer Karachi", "Polymer Engineering NED", "Process Safety Management", "Material Science Portfolio", "Aieyan Portfolio"],
-  authors: [{ name: "Muhammad Aieyan" }],
-  metadataBase: new URL('https://aieyan-portfolio.vercel.app'),
+  title: "Muhammad Aieyan Channa | Petrochemical & Polymer Engineering Student",
+  description: "Muhammad Aieyan Channa is a Petrochemical and Polymer Engineering student at NED University. Exploring process optimization, material science, and industrial engineering.",
+  keywords: ["Muhammad Aieyan Channa", "Aieyan Channa", "Petrochemical Engineering Student", "NED University Student", "Polymer Engineering Student Karachi"],
+  authors: [{ name: "Muhammad Aieyan Channa" }],
+  metadataBase: new URL('https://muhammadaieyanchanna.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Muhammad Aieyan | Petrochemical Engineer",
-    description: "Explore the technical portfolio and research of Muhammad Aieyan, specializing in Polymer and Petrochemical Engineering.",
-    url: "https://aieyan.io", // Placeholder, user will update
+    title: "Muhammad Aieyan Channa | Engineering Student",
+    description: "Technical portfolio of Muhammad Aieyan Channa, a Petrochemical and Polymer Engineering student at NED University.",
+    url: "https://muhammadaieyanchanna.vercel.app",
     siteName: "Muhammad Aieyan Portfolio",
     images: [
       {
@@ -47,11 +47,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Muhammad Aieyan",
+              "name": "Muhammad Aieyan Channa",
               "alternateName": ["Aeiyan", "Aieyan Channa", "Aieyan Memon", "Aeiyan Channa", "Aeiyan Memon"],
-              "url": "https://aieyan-portfolio.vercel.app",
-              "jobTitle": "Petrochemical Engineer",
-              "description": "Muhammad Aieyan is a specialized Petrochemical and Polymer Engineer at NED University, focusing on advanced material science and industrial process optimization.",
+              "url": "https://muhammadaieyanchanna.vercel.app",
+              "jobTitle": "Petrochemical Engineering Student",
+              "description": "Muhammad Aieyan Channa is a Petrochemical and Polymer Engineering student at NED University, focusing on advanced material science and industrial process optimization.",
               "knowsAbout": [
                 "Polymer Engineering",
                 "Petrochemical Engineering",
@@ -75,8 +75,8 @@ export default function RootLayout({
                 "addressCountry": "PK"
               },
               "sameAs": [
-                "https://www.linkedin.com/in/muhammad-aieyan", // Placeholder
-                "https://github.com/muhammad-aieyan" // Placeholder
+                "https://www.linkedin.com/in/muhammed-aieyan-channa-1434213a7/",
+                "https://github.com/muhammad-aieyan"
               ]
             })
           }}
