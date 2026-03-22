@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/icon.png',
+  },
   openGraph: {
     title: "Muhammad Aieyan Channa | Engineering Student",
     description: "Technical portfolio of Muhammad Aieyan Channa, a Petrochemical and Polymer Engineering student at NED University.",
