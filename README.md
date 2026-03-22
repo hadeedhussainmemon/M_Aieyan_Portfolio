@@ -1,75 +1,48 @@
-# [ MUHAMMAD_AIEYAN_CHANNA // PORTFOLIO_V3.0 ]
+# [ MUHAMMAD_AIEYAN_CHANNA // SYSTEM_V3.1 ]
 
-An ultra-modern, high-fidelity professional portfolio designed for **Muhammad Aieyan Channa**, a Petrochemical and Polymer Engineering **student** at **NED University of Engineering & Technology**. Built with a focus on industrial aesthetics, technical precision, and maximum search engine discoverability.
+> **"Exploring the intersection of advanced material science and industrial efficiency."**
 
----
+## // INTRODUCTION
 
-## 🛠 TECH_SPECIFICATIONS
+I am **Muhammad Aieyan Channa**, a dedicated **Petrochemical and Polymer Engineering student** at **NED University of Engineering & Technology (2025–2029)**. My academic and professional journey is driven by a deep interest in process optimization, reaction kinetics, and the transformative potential of polymer materials in modern industry.
 
-| COMPONENT | TECHNOLOGY |
-| :--- | :--- |
-| **Framework** | Next.js 14 (App Router) |
-| **Language** | TypeScript (Strict Mode) |
-| **Styling** | Vanilla CSS (Modular) |
-| **Animation** | Custom IntersectionObserver + CSS Keyframes |
-| **SEO** | JSON-LD Schema + Next.js Metadata API |
-| **Deployment** | Vercel Optimized |
+Located in **Karachi, Pakistan**, I am focused on mastering the complexities of thermodynamics, reactor mechanics, and chemical refining to contribute to the global energy and material landscapes.
 
 ---
 
-## ✨ PREMIUM_FEATURES
+## // SCIENTIFIC_JOURNEY
 
-- **[ BOOT_SEQUENCE ]**: A high-tech terminal emulation loader that initializes the site with industrial telemetry data.
-- **[ MAGNETIC_UI ]**: Physically accurate interactive buttons that 'pull' toward the user's cursor for a premium tactile feel.
-- **[ PARTICLE_HERO ]**: A dynamic, reacting grid background that enhances the technical atmosphere of the Hero section.
-- **[ GLASS_NOISE ]**: Advanced glassmorphism components with subtle grain textures for increased depth and realism.
-- **[ SCANLINE_DIVIDERS ]**: Animated industrial scanlines that move throughout the page to simulate a data-driven environment.
+### 🎓 ACADEMIC_CORE
+- **NED University (BE Polymer & Petrochemical Engineering)**: Focus on advanced polymer blends, refining analysis, and material characterization.
+- **GDBC Johar (Pre-Engineering)**: Foundations in chemistry and physics.
 
----
-
-## 🔍 SEO_STRATEGY
-
-The portfolio is engineered for maximum searchability using modern techniques:
-- **Resilient Search**: Indexed for common misspellings (**Aeiyan**) and variations (**Aieyan Channa**, **Aieyan Memon**).
-- **Rich Snippets**: Comprehensive **JSON-LD Schema (Person)** including institutional data (NED University) and engineering expertise (`knowsAbout`).
-- **structural Indexing**: Validated `robots.txt` and `sitemap.xml` for efficient crawler mapping.
-- **Social Fidelity**: Custom high-fidelity **Open Graph (OG)** images for professional LinkedIn and WhatsApp sharing.
+### 💼 PROFESSIONAL_EVOLUTION
+- **Sir Yasir Schooling System**: Mathematics Instructor (Secondary Level), focusing on clarity and structured problem-solving.
+- **Paint Master's Factory**: Inventory & Sales Management, gaining firsthand experience in industrial logistics and chemical product scaling.
 
 ---
 
-## 🚀 GETTING_STARTED
+## // TECH_ARSENAL
 
-### 01_INSTALLATION
-```bash
-npm install
-```
+### 🧪 ENGINEERING_CORE
+- **Polymer Chemistry & Kinetics**
+- **Petrochemical Process Dynamics**
+- **Material Characterization (DSC, Tensile Testing)**
+- **Reactor Design & Optimization**
 
-### 02_DEVELOPMENT
-```bash
-npm run dev
-```
-
-### 03_PRODUCTION_BUILD
-```bash
-npm run build
-```
+### 💻 SYSTEM_ARCHITECTURE
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Vanilla CSS (Industrial Glassmorphism)
+- **Deployment**: Vercel Official
 
 ---
 
-## 📂 PROJECT_STRUCTURE
+## // CONNECT
 
-```text
-src/
-├── app/            # Next.js 14 App Router (Layout & SEO)
-├── components/     # High-fidelity UI components
-├── styles/         # Global design system & animations
-public/
-├── images/         # Optimized assets & OG media
-├── Aieyan-CV.pdf   # Integrated Resume
-└── sitemap.xml     # Search mapping
-```
+- **LinkedIn**: [muhammed-aieyan-channa-1434213a7](https://www.linkedin.com/in/muhammed-aieyan-channa-1434213a7/)
+- **Email**: Chanaieyan245@gmail.com
+- **Official Site**: [muhammadaieyanchanna.vercel.app](https://muhammadaieyanchanna.vercel.app)
 
 ---
-
-## 🛡 LICENSE
-MIT // [MUHAMMAD_AIEYAN] (c) 2026. All data secured and verified.
+*Verified NED Core // Data Secured // (c) 2026 Muhammad Aieyan Channa*

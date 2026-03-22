@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     description: "Technical portfolio of Muhammad Aieyan, specialized in Polymer and Petrochemical Engineering.",
     images: ["/images/og-image.png"],
   },
+  verification: {
+    google: "MfthzTxiKJ5K2FXjdohxGlRRmMSleS0lI2pQ1RKMWI4",
+  },
 };
 
 export default function RootLayout({
