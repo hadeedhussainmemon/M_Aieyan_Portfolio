@@ -82,20 +82,27 @@ export default function Home() {
 
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-    // Magnetic Effect
+    // Throttled Magnetic Effect
+    let rafId: number;
     const handleMouseMove = (e: MouseEvent) => {
-      const magneticItems = document.querySelectorAll('.btn');
-      magneticItems.forEach((btn) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        const distance = Math.sqrt(x * x + y * y);
+      if (rafId) cancelAnimationFrame(rafId);
+      
+      rafId = requestAnimationFrame(() => {
+        const magneticItems = document.querySelectorAll('.btn');
+        magneticItems.forEach((btn) => {
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          const distance = Math.sqrt(x * x + y * y);
 
-        if (distance < 150) {
-          (btn as HTMLElement).style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-        } else {
-          (btn as HTMLElement).style.transform = `translate(0px, 0px)`;
-        }
+          if (distance < 120) {
+            (btn as HTMLElement).style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+            (btn as HTMLElement).style.transition = 'transform 0.1s ease-out';
+          } else {
+            (btn as HTMLElement).style.transform = `translate(0px, 0px)`;
+            (btn as HTMLElement).style.transition = 'transform 0.3s ease-out';
+          }
+        });
       });
     };
 
@@ -220,7 +227,7 @@ export default function Home() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               RESUME.PDF
             </a>
-            <a href="https://www.linkedin.com/in/muhammed-aieyan-channa-1434213a7/" target="_blank" className="btn btn-outline">LINKEDIN_PROFILE</a>
+            <a href="https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/" target="_blank" className="btn btn-outline">LINKEDIN_PROFILE</a>
           </div>
         </section>
 
@@ -330,7 +337,7 @@ export default function Home() {
 
             <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
               <a href="mailto:Chanaieyan245@gmail.com" className="btn" style={{ background: 'var(--accent-safety)', padding: '1rem 3rem' }}>UPLINK_MESSAGE</a>
-              <a href="https://www.linkedin.com/in/muhammed-aieyan-channa-1434213a7/" target="_blank" className="btn btn-outline" style={{ borderColor: 'var(--accent-cyan)', color: 'var(--accent-cyan)', padding: '1rem 3rem' }}>LINKEDIN_CONNECT</a>
+              <a href="https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/" target="_blank" className="btn btn-outline" style={{ borderColor: 'var(--accent-cyan)', color: 'var(--accent-cyan)', padding: '1rem 3rem' }}>LINKEDIN_CONNECT</a>
             </div>
             
             <div style={{ marginTop: '5rem', display: 'flex', justifyContent: 'center', gap: '4rem', opacity: 0.2, fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>

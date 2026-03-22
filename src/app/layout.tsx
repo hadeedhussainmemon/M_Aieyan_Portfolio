@@ -78,7 +78,7 @@ export default function RootLayout({
                 "addressCountry": "PK"
               },
               "sameAs": [
-                "https://www.linkedin.com/in/muhammed-aieyan-channa-1434213a7/",
+                "https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/",
                 "https://github.com/muhammad-aieyan"
               ]
             })
