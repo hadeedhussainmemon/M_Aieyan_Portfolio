@@ -149,7 +149,11 @@ export default function Home() {
             >[ CLOSE_X ]</button>
             <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--accent-safety)', fontSize: '0.7rem', marginBottom: '1rem' }}>PROJECT_DETAILS://{selectedProject.title}</div>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>{selectedProject.title}</h2>
-            <img src={selectedProject.img} alt={selectedProject.title} style={{ width: '100%', height: '300px', objectFit: 'cover', border: '1px solid var(--glass-border)', marginBottom: '2rem' }} />
+            <img 
+              src={selectedProject.img} 
+              alt={`Engineering Project by Muhammad Aieyan Channa: ${selectedProject.title}`} 
+              style={{ width: '100%', height: '300px', objectFit: 'cover', border: '1px solid var(--glass-border)', marginBottom: '2rem' }} 
+            />
             <div style={{ borderLeft: '2px solid var(--accent-safety)', paddingLeft: '1.5rem', marginBottom: '2rem' }}>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', fontSize: '1.1rem' }}>{selectedProject.details}</p>
             </div>
@@ -302,7 +306,11 @@ export default function Home() {
             {PROJECTS.map((p) => (
               <div key={p.id} className="glass card" style={{ padding: '0', background: 'transparent', cursor: 'pointer' }} onClick={() => setSelectedProject(p)}>
                 <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
-                  <img src={p.img} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} />
+                  <img 
+                    src={p.img} 
+                    alt={`Muhammad Aieyan Channa Research: ${p.title}`} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} 
+                  />
                   <div style={{ 
                     position: 'absolute', 
                     top: '20px', 

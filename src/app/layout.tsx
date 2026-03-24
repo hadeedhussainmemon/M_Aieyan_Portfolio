@@ -60,41 +60,55 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Muhammad Aieyan Channa",
-              "alternateName": ["Aeiyan", "Aieyan Channa", "Aieyan Memon", "Aeiyan Channa", "Aeiyan Memon"],
-              "url": "https://muhammadaieyanchanna.vercel.app",
-              "jobTitle": "Petrochemical Engineering Student",
-              "description": "Muhammad Aieyan Channa is a Petrochemical and Polymer Engineering student at NED University, focusing on advanced material science and industrial process optimization.",
-              "knowsAbout": [
-                "Polymer Engineering",
-                "Petrochemical Engineering",
-                "Process Optimization",
-                "Material Science",
-                "Industrial Safety",
-                "Reactor Mechanics"
-              ],
-              "memberOf": {
-                "@type": "Organization",
-                "name": "NED University of Engineering & Technology"
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Muhammad Aieyan Channa",
+                "alternateName": ["Aeiyan Channa", "Aieyan Memon", "Channa Aieyan"],
+                "url": "https://muhammadaieyanchanna.vercel.app",
+                "jobTitle": "Petrochemical & Polymer Engineering Student",
+                "image": "https://muhammadaieyanchanna.vercel.app/icon.png",
+                "description": "Muhammad Aieyan Channa is a specialized Petrochemical Engineering student at NED University Karachi, focusing on material science and process kinetics.",
+                "knowsAbout": ["Polymer Kinetics", "Petrochemical Refining", "Catalysis", "Thermodynamics", "Process Dynamics"],
+                "memberOf": {
+                  "@type": "Organization",
+                  "name": "NED University of Engineering & Technology"
+                },
+                "alumniOf": {
+                  "@type": "CollegeOrUniversity",
+                  "name": "NED University of Engineering & Technology"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Karachi",
+                  "addressRegion": "Sindh",
+                  "addressCountry": "PK"
+                },
+                "sameAs": [
+                  "https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/",
+                  "https://github.com/muhammad-aieyan"
+                ]
               },
-              "alumniOf": {
-                "@type": "CollegeOrUniversity",
-                "name": "NED University of Engineering & Technology"
-              },
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Karachi",
-                "addressRegion": "Sindh",
-                "addressCountry": "PK"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/",
-                "https://github.com/muhammad-aieyan"
-              ]
-            })
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://muhammadaieyanchanna.vercel.app"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Engineering Projects",
+                    "item": "https://muhammadaieyanchanna.vercel.app/#projects"
+                  }
+                ]
+              }
+            ])
           }}
         />
       </head>
