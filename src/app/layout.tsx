@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Muhammad Aieyan Channa | Petrochemical & Polymer Engineering Student",
-  description: "Official portfolio of Muhammad Aieyan Channa, a Petrochemical and Polymer Engineering student at NED University. Expert in process design, plastics, and industrial safety.",
+  title: "Muhammad Aieyan Channa | Petrochemical Student @ NED",
+  description: "NED University student specializing in Petrochemical & Polymer Engineering. Exploring process design, industrial optimization, and material science.",
   keywords: [
     "Muhammad Aieyan Channa", "Aieyan Channa", "Muhammad Aieyan Channa NED", 
     "Muahmmad Aieyan Channa", "Aiayan Channa", "Aeiyan Channa", "Aeiyan Memon", 
@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Muhammad Aieyan Channa" }],
   metadataBase: new URL('https://muhammadaieyanchanna.vercel.app'),
+  applicationName: "Muhammad Aieyan Channa",
+  appleWebApp: {
+    title: "Aieyan Channa",
+    statusBarStyle: "black-translucent",
+  },
   alternates: {
     canonical: '/',
   },
@@ -19,10 +24,10 @@ export const metadata: Metadata = {
     icon: '/icon.png',
   },
   openGraph: {
-    title: "Muhammad Aieyan Channa | Petrochemical & Polymer Engineering Student",
-    description: "The official technical profile of Muhammad Aieyan Channa at NED University. Exploring the future of Petrochemical & Polymer industries.",
+    title: "Muhammad Aieyan Channa | Petrochemical Student @ NED",
+    description: "Official technical profile of Muhammad Aieyan Channa at NED University. Petrochemical & Polymer Engineering specialist.",
     url: "https://muhammadaieyanchanna.vercel.app",
-    siteName: "Muhammad Aieyan Portfolio",
+    siteName: "Muhammad Aieyan Channa",
     images: [
       {
         url: "/images/og-image.png",
@@ -35,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Aieyan | Petrochemical Engineer",
-    description: "Technical portfolio of Muhammad Aieyan, specialized in Polymer and Petrochemical Engineering.",
+    title: "Muhammad Aieyan Channa | Petrochemical @ NED",
+    description: "NED University student specialized in Polymer and Petrochemical Engineering.",
     images: ["/images/og-image.png"],
   },
   verification: {

@@ -164,6 +164,7 @@ export default function Home() {
 
       <Navbar />
       <div className="scanline" />
+
       <main>
         {/* --- Hero Section --- */}
         <section id="home" style={{
