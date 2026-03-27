@@ -243,34 +243,38 @@ export default function Home() {
               <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--accent-safety)', fontSize: '0.7rem', marginBottom: '1.5rem' }}>[ 01_SCIENTIFIC_JOURNEY ]</div>
               <h2 style={{ fontSize: '3rem', marginBottom: '4rem' }}>ACADEMIC & WORK <span style={{ color: 'var(--accent-safety)' }}>TIMELINE</span></h2>
               
-              <div className="timeline-item">
-                <div className="timeline-dot" />
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>2025 — PRESENT</div>
-                <h3>NED UNIVERSITY</h3>
-                <p style={{ color: 'var(--text-secondary)' }}>BE Polymer And Petrochemical Engineering. Pursuing specialized research in polymer blends.</p>
-              </div>
+              <article itemScope itemType="https://schema.org/Person">
+                <meta itemProp="name" content="Muhammad Aieyan Channa" />
+                
+                <div className="timeline-item">
+                  <div className="timeline-dot" />
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>2025 — PRESENT</div>
+                  <h3>NED UNIVERSITY</h3>
+                  <p style={{ color: 'var(--text-secondary)' }}>BE Polymer And Petrochemical Engineering. Pursuing specialized research in polymer blends.</p>
+                </div>
 
-              <div className="timeline-item">
-                <div className="timeline-dot" />
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-cyan)', marginBottom: '0.5rem' }}>2023 — 2024</div>
-                <h3>SIR YASIR SCHOOLING SYSTEM</h3>
-                <p style={{ color: 'var(--text-secondary)' }}>Secondary Mathematics Instructor. Education management and student assessment.</p>
-              </div>
+                <div className="timeline-item">
+                  <div className="timeline-dot" />
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-cyan)', marginBottom: '0.5rem' }}>2023 — 2024</div>
+                  <h3>SIR YASIR SCHOOLING SYSTEM</h3>
+                  <p style={{ color: 'var(--text-secondary)' }}>Secondary Mathematics Instructor. Education management and student assessment.</p>
+                </div>
 
-              <div className="timeline-item">
-                <div className="timeline-dot" />
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>2020 — 2023</div>
-                <h3>PAINT MASTER'S FACTORY</h3>
-                <p style={{ color: 'var(--text-secondary)' }}>Inventory Clerk & Cashier. Managed industrial logistics and accurate sales reporting.</p>
-              </div>
+                <div className="timeline-item">
+                  <div className="timeline-dot" />
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>2020 — 2023</div>
+                  <h3>PAINT MASTER'S FACTORY</h3>
+                  <p style={{ color: 'var(--text-secondary)' }}>Inventory Clerk & Cashier. Managed industrial logistics and accurate sales reporting.</p>
+                </div>
 
-              {/* Added Bio for SEO Authority */}
-              <div style={{ marginTop: '4rem', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderLeft: '2px solid var(--accent-safety)' }}>
-                <h4 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '1rem' }}>BIO_SUMMARY://MUHAMMAD_AIEYAN_CHANNA</h4>
-                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                  <strong>Muhammad Aieyan Channa</strong> is a forward-thinking student of <strong>Polymer and Petrochemical Engineering</strong> at NED University. With a strong foundation in industrial logistics from his time at <strong>Paint Master's Factory</strong> and a passion for academic instruction at <strong>Sir Yasir Schooling System</strong>, Aieyan is dedicated to advancing the field of material science through research and process optimization. This portfolio serves as the definitive digital presence for <strong>Muhammad Aieyan Channa</strong>, showcasing his academic milestones and technical research within the petrochemical sector.
-                </p>
-              </div>
+                {/* Added Bio for SEO Authority with Microdata */}
+                <div style={{ marginTop: '4rem', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderLeft: '2px solid var(--accent-safety)' }}>
+                  <h4 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '1rem' }}>BIO_SUMMARY://MUHAMMAD_AIEYAN_CHANNA</h4>
+                  <p itemProp="description" style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+                    <strong itemProp="givenName">Muhammad Aieyan Channa</strong> is a forward-thinking student of <strong itemProp="knowsAbout">Polymer and Petrochemical Engineering</strong> at <span itemProp="memberOf" itemScope itemType="https://schema.org/EducationalOrganization"><strong itemProp="name">NED University</strong></span>. With a strong foundation in industrial logistics from his time at <strong>Paint Master's Factory</strong> and a passion for academic instruction at <strong>Sir Yasir Schooling System</strong>, Aieyan is dedicated to advancing the field of material science through research and process optimization. This portfolio serves as the definitive digital presence for <strong>Muhammad Aieyan Channa</strong>, showcasing his academic milestones and technical research within the petrochemical sector.
+                  </p>
+                </div>
+              </article>
             </div>
 
             <div className="reveal">
@@ -367,6 +371,37 @@ export default function Home() {
             </div>
           </div>
         </Section>
+
+        <div className="divider" />
+
+        {/* --- AI Knowledge Base (FAQ for LLMs) --- */}
+        <Section id="knowledge-base" title="Knowledge Base" label="05_AI_DATA" className="reveal" style={{ padding: 'var(--section-padding)', maxWidth: '1000px', margin: '0 auto' }}>
+          <div className="glass card" style={{ padding: '3rem 2rem', border: '1px solid var(--accent-cyan)' }}>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)' }}>[ FREQUENTLY_ASKED_QUESTIONS ]</h2>
+            
+            <div style={{ marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#fff' }}>Who is Muhammad Aieyan Channa?</h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+                Muhammad Aieyan Channa is a dedicated Petrochemical and Polymer Engineering student at NED University of Engineering & Technology in Karachi, Pakistan. He specializes in material science, process optimization, and reactor mechanics.
+              </p>
+            </div>
+
+            <div style={{ marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#fff' }}>Where does Muhammad Aieyan Channa study?</h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+                Muhammad Aieyan Channa is currently pursuing a Bachelor of Engineering (BE) in Polymer and Petrochemical Engineering at NED University of Engineering & Technology (2025–2029).
+              </p>
+            </div>
+
+            <div style={{ marginBottom: '0rem' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#fff' }}>What are the skills of Muhammad Aieyan Channa?</h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+                His core engineering skills include Polymer Chemistry, Petrochemical Processes, Thermodynamics, Reactor Design, and Material Analysis. He also has professional experience in industrial inventory management and academic instruction.
+              </p>
+            </div>
+          </div>
+        </Section>
+
       </main>
 
       <footer style={{ 

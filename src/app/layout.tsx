@@ -64,6 +64,7 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
+                "@id": "https://muhammadaieyanchanna.vercel.app/#person",
                 "name": "Muhammad Aieyan Channa",
                 "alternateName": ["Aeiyan Channa", "Aieyan Memon", "Channa Aieyan"],
                 "url": "https://muhammadaieyanchanna.vercel.app",
@@ -105,6 +106,52 @@ export default function RootLayout({
                     "position": 2,
                     "name": "Engineering Projects",
                     "item": "https://muhammadaieyanchanna.vercel.app/#projects"
+                  }
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Muhammad Aieyan Channa",
+                "alternateName": ["Aieyan Channa Portfolio", "Muhammad Aieyan Channa NED"],
+                "url": "https://muhammadaieyanchanna.vercel.app"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "ProfilePage",
+                "dateCreated": "2026-03-23T00:00:00Z",
+                "dateModified": new Date().toISOString(),
+                "mainEntity": {
+                  "@id": "https://muhammadaieyanchanna.vercel.app/#person"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Who is Muhammad Aieyan Channa?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Muhammad Aieyan Channa is a dedicated Petrochemical and Polymer Engineering student at NED University of Engineering & Technology in Karachi, Pakistan. He specializes in material science, process optimization, and reactor mechanics."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Where does Muhammad Aieyan Channa study?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Muhammad Aieyan Channa is currently pursuing a Bachelor of Engineering (BE) in Polymer and Petrochemical Engineering at NED University of Engineering & Technology (2025–2029)."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What are the skills of Muhammad Aieyan Channa?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "His core engineering skills include Polymer Chemistry, Petrochemical Processes, Thermodynamics, Reactor Design, and Material Analysis. He also has professional experience in industrial inventory management and academic instruction."
+                    }
                   }
                 ]
               }
