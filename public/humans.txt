@@ -1,0 +1,10 @@
+/* TEAM */
+Name: Muhammad Aieyan Channa
+Role: Student, Portfolio Owner
+Location: Karachi, Pakistan
+Contact: Chanaieyan245@gmail.com
+
+/* SITE */
+Framework: Next.js
+Language: TypeScript
+URL: https://muhammadaieyanchanna.vercel.app

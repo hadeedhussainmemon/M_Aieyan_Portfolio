@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Section from "@/components/Section";
 
@@ -149,10 +150,12 @@ export default function Home() {
             >[ CLOSE_X ]</button>
             <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--accent-safety)', fontSize: '0.7rem', marginBottom: '1rem' }}>PROJECT_DETAILS://{selectedProject.title}</div>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>{selectedProject.title}</h2>
-            <img 
-              src={selectedProject.img} 
-              alt={`Engineering Project by Muhammad Aieyan Channa: ${selectedProject.title}`} 
-              style={{ width: '100%', height: '300px', objectFit: 'cover', border: '1px solid var(--glass-border)', marginBottom: '2rem' }} 
+            <Image
+              src={selectedProject.img}
+              alt={`Engineering Project by Muhammad Aieyan Channa: ${selectedProject.title}`}
+              width={1200}
+              height={675}
+              style={{ width: '100%', height: '300px', objectFit: 'cover', border: '1px solid var(--glass-border)', marginBottom: '2rem' }}
             />
             <div style={{ borderLeft: '2px solid var(--accent-safety)', paddingLeft: '1.5rem', marginBottom: '2rem' }}>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', fontSize: '1.1rem' }}>{selectedProject.details}</p>
@@ -224,15 +227,15 @@ export default function Home() {
             position: 'relative',
             zIndex: 2
           }}>
-            PETROCHEMICAL ENGINEERING STUDENT // POLYMER SPECIALIST<br/>
-            <span style={{ fontSize: '0.9rem', opacity: 0.7 }}>NED UNIVERSITY OF ENGINEERING & TECHNOLOGY (2025–2029)</span>
+            Muhammad Aieyan Channa is a Polymer and Petrochemical Engineering student at NED University of Engineering and Technology, Karachi.<br/>
+            <span style={{ fontSize: '0.9rem', opacity: 0.7 }}>Focused on material science, process analysis, and practical engineering problem-solving through academic projects and hands-on learning.</span>
           </p>
           <div className="reveal hero-buttons" style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', width: '100%', justifyContent: 'center', position: 'relative', zIndex: 2 }}>
-            <a href="/Aieyan-CV.pdf" target="_blank" className="btn" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+            <a href="/Aieyan-CV.pdf" target="_blank" rel="noopener noreferrer" className="btn" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               RESUME.PDF
             </a>
-            <a href="https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/" target="_blank" className="btn btn-outline">LINKEDIN_PROFILE</a>
+            <a href="https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/" target="_blank" rel="noopener noreferrer" className="btn btn-outline">LINKEDIN_PROFILE</a>
           </div>
         </section>
 
@@ -263,15 +266,15 @@ export default function Home() {
                 <div className="timeline-item">
                   <div className="timeline-dot" />
                   <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>2020 — 2023</div>
-                  <h3>PAINT MASTER'S FACTORY</h3>
+                  <h3>PAINT MASTER&apos;S FACTORY</h3>
                   <p style={{ color: 'var(--text-secondary)' }}>Inventory Clerk & Cashier. Managed industrial logistics and accurate sales reporting.</p>
                 </div>
 
-                {/* Added Bio for SEO Authority with Microdata */}
+                {/* Profile summary with structured metadata */}
                 <div style={{ marginTop: '4rem', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderLeft: '2px solid var(--accent-safety)' }}>
                   <h4 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent-safety)', marginBottom: '1rem' }}>BIO_SUMMARY://MUHAMMAD_AIEYAN_CHANNA</h4>
                   <p itemProp="description" style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                    <strong itemProp="givenName">Muhammad Aieyan Channa</strong> is a forward-thinking student of <strong itemProp="knowsAbout">Polymer and Petrochemical Engineering</strong> at <span itemProp="memberOf" itemScope itemType="https://schema.org/EducationalOrganization"><strong itemProp="name">NED University</strong></span>. With a strong foundation in industrial logistics from his time at <strong>Paint Master's Factory</strong> and a passion for academic instruction at <strong>Sir Yasir Schooling System</strong>, Aieyan is dedicated to advancing the field of material science through research and process optimization. This portfolio serves as the definitive digital presence for <strong>Muhammad Aieyan Channa</strong>, showcasing his academic milestones and technical research within the petrochemical sector.
+                    <strong itemProp="givenName">Muhammad Aieyan Channa</strong> is a student of <strong itemProp="knowsAbout">Polymer and Petrochemical Engineering</strong> at <span itemProp="memberOf" itemScope itemType="https://schema.org/EducationalOrganization"><strong itemProp="name">NED University</strong></span>. This portfolio presents self-reported academic background, prior work experience, and selected technical projects in materials and petrochemical process studies.
                   </p>
                 </div>
               </article>
@@ -310,10 +313,12 @@ export default function Home() {
             {PROJECTS.map((p) => (
               <div key={p.id} className="glass card" style={{ padding: '0', background: 'transparent', cursor: 'pointer' }} onClick={() => setSelectedProject(p)}>
                 <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
-                  <img 
-                    src={p.img} 
-                    alt={`Muhammad Aieyan Channa Research: ${p.title}`} 
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} 
+                  <Image
+                    src={p.img}
+                    alt={`Muhammad Aieyan Channa Research: ${p.title}`}
+                    width={800}
+                    height={500}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }}
                   />
                   <div style={{ 
                     position: 'absolute', 
@@ -345,12 +350,12 @@ export default function Home() {
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', textAlign: 'left', marginBottom: '3rem' }}>
               <div className="glass" style={{ padding: '1.5rem', background: 'rgba(255,107,0,0.05)' }}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>// DESTINATION_ID</div>
+                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'var(--accent-safety)', marginBottom: '0.5rem' }}>{'// DESTINATION_ID'}</div>
                 <div style={{ fontSize: '1.1rem' }}>Muhammad Aieyan Channa</div>
                 <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>Petrochemical Engineering Dept.</div>
               </div>
               <div className="glass" style={{ padding: '1.5rem', background: 'rgba(0,240,255,0.05)' }}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'var(--accent-cyan)', marginBottom: '0.5rem' }}>// GEOLOCATION</div>
+                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'var(--accent-cyan)', marginBottom: '0.5rem' }}>{'// GEOLOCATION'}</div>
                 <div style={{ fontSize: '1.1rem' }}>Scheme-33, Karachi</div>
                 <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>Sindh_Pakistan_Region</div>
               </div>
@@ -358,7 +363,7 @@ export default function Home() {
 
             <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
               <a href="mailto:Chanaieyan245@gmail.com" className="btn" style={{ background: 'var(--accent-safety)', padding: '1rem 3rem' }}>UPLINK_MESSAGE</a>
-              <a href="https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/" target="_blank" className="btn btn-outline" style={{ borderColor: 'var(--accent-cyan)', color: 'var(--accent-cyan)', padding: '1rem 3rem' }}>LINKEDIN_CONNECT</a>
+              <a href="https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ borderColor: 'var(--accent-cyan)', color: 'var(--accent-cyan)', padding: '1rem 3rem' }}>LINKEDIN_CONNECT</a>
             </div>
             
             <div style={{ marginTop: '5rem', display: 'flex', justifyContent: 'center', gap: '4rem', opacity: 0.2, fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
@@ -374,7 +379,7 @@ export default function Home() {
 
         <div className="divider" />
 
-        {/* --- AI Knowledge Base (FAQ for LLMs) --- */}
+        {/* --- Profile FAQ --- */}
         <Section id="knowledge-base" title="Knowledge Base" label="05_AI_DATA" className="reveal" style={{ padding: 'var(--section-padding)', maxWidth: '1000px', margin: '0 auto' }}>
           <div className="glass card" style={{ padding: '3rem 2rem', border: '1px solid var(--accent-cyan)' }}>
             <h2 style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)' }}>[ FREQUENTLY_ASKED_QUESTIONS ]</h2>
@@ -382,21 +387,27 @@ export default function Home() {
             <div style={{ marginBottom: '2rem' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#fff' }}>Who is Muhammad Aieyan Channa?</h3>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                Muhammad Aieyan Channa is a dedicated Petrochemical and Polymer Engineering student at NED University of Engineering & Technology in Karachi, Pakistan. He specializes in material science, process optimization, and reactor mechanics.
+                Muhammad Aieyan Channa is a Polymer and Petrochemical Engineering student at NED University of Engineering and Technology, Karachi. He is focused on material science, process analysis, and practical engineering problem-solving through academic projects and hands-on learning.
               </p>
             </div>
 
             <div style={{ marginBottom: '2rem' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#fff' }}>Where does Muhammad Aieyan Channa study?</h3>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                Muhammad Aieyan Channa is currently pursuing a Bachelor of Engineering (BE) in Polymer and Petrochemical Engineering at NED University of Engineering & Technology (2025–2029).
+                This profile states that he is pursuing a Bachelor of Engineering (BE) in Polymer and Petrochemical Engineering at NED University of Engineering & Technology (2025-2029).
               </p>
             </div>
 
             <div style={{ marginBottom: '0rem' }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#fff' }}>What are the skills of Muhammad Aieyan Channa?</h3>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                His core engineering skills include Polymer Chemistry, Petrochemical Processes, Thermodynamics, Reactor Design, and Material Analysis. He also has professional experience in industrial inventory management and academic instruction.
+                Listed skills include Polymer Chemistry, Petrochemical Processes, Thermodynamics, Reactor Design, and Material Analysis, along with prior experience in inventory management and teaching.
+              </p>
+            </div>
+
+            <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid var(--glass-border)' }}>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', fontSize: '0.9rem' }}>
+                Note: Public search engines and AI tools may show inconsistent results for private individuals. For accuracy, refer to official records and verified profiles.
               </p>
             </div>
           </div>
@@ -412,8 +423,8 @@ export default function Home() {
         fontSize: '0.7rem', 
         color: '#444' 
       }}>
-        <div style={{ marginBottom: '1rem' }}>&copy; {new Date().getFullYear()} MUHAMMAD_AIEYAN_CHANNA // SYSTEM_V3.1.0</div>
-        <div style={{ letterSpacing: '0.4em' }}>TRANSMISSION COMPLETE // DATA SECURED</div>
+        <div style={{ marginBottom: '1rem' }}>&copy; {new Date().getFullYear()} MUHAMMAD_AIEYAN_CHANNA {' // '} SYSTEM_V3.1.0</div>
+        <div style={{ letterSpacing: '0.4em' }}>TRANSMISSION COMPLETE {' // '} DATA SECURED</div>
       </footer>
 
       <style jsx global>{`

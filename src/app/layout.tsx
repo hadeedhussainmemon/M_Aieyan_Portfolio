@@ -2,30 +2,58 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Muhammad Aieyan Channa | Petrochemical Student @ NED",
-  description: "NED University student specializing in Petrochemical & Polymer Engineering. Exploring process design, industrial optimization, and material science.",
+  title: {
+    default: "Muhammad Aieyan Channa | Petrochemical Student @ NED",
+    template: "%s | Muhammad Aieyan Channa",
+  },
+  description: "Muhammad Aieyan Channa is a Polymer and Petrochemical Engineering student at NED University of Engineering and Technology, Karachi, focused on material science and process analysis.",
   keywords: [
-    "Muhammad Aieyan Channa", "Aieyan Channa", "Muhammad Aieyan Channa NED", 
-    "Muahmmad Aieyan Channa", "Aiayan Channa", "Aeiyan Channa", "Aeiyan Memon", 
-    "Petrochemical Engineering Student", "NED University Portfolio", 
-    "Polymer specialist Karachi", "Muhammad Aieyan Channa NEDUET"
+    "Muhammad Aieyan Channa",
+    "Aieyan Channa",
+    "Muhammad Aieyan Channa NED",
+    "Petrochemical Engineering Student",
+    "NED University Portfolio",
+    "Polymer Engineering Karachi"
   ],
   authors: [{ name: "Muhammad Aieyan Channa" }],
+  creator: "Muhammad Aieyan Channa",
+  category: "Education",
   metadataBase: new URL('https://muhammadaieyanchanna.vercel.app'),
   applicationName: "Muhammad Aieyan Channa",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  manifest: '/manifest.webmanifest',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   appleWebApp: {
     title: "Aieyan Channa",
     statusBarStyle: "black-translucent",
   },
   alternates: {
     canonical: '/',
+    languages: {
+      "en-US": "/",
+    },
   },
   icons: {
     icon: '/icon.png',
   },
   openGraph: {
     title: "Muhammad Aieyan Channa | Petrochemical Student @ NED",
-    description: "Official technical profile of Muhammad Aieyan Channa at NED University. Petrochemical & Polymer Engineering specialist.",
+    description: "Polymer and Petrochemical Engineering student at NED University of Engineering and Technology, Karachi, focused on material science and process analysis.",
     url: "https://muhammadaieyanchanna.vercel.app",
     siteName: "Muhammad Aieyan Channa",
     images: [
@@ -33,15 +61,16 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
+        alt: "Muhammad Aieyan Channa portfolio preview",
       },
     ],
     locale: "en_US",
-    type: "website",
+    type: "profile",
   },
   twitter: {
     card: "summary_large_image",
     title: "Muhammad Aieyan Channa | Petrochemical @ NED",
-    description: "NED University student specialized in Polymer and Petrochemical Engineering.",
+    description: "Polymer and Petrochemical Engineering student at NED University of Engineering and Technology, Karachi, focused on material science and process analysis.",
     images: ["/images/og-image.png"],
   },
   verification: {
@@ -66,18 +95,26 @@ export default function RootLayout({
                 "@type": "Person",
                 "@id": "https://muhammadaieyanchanna.vercel.app/#person",
                 "name": "Muhammad Aieyan Channa",
-                "alternateName": ["Aeiyan Channa", "Aieyan Memon", "Channa Aieyan"],
+                "givenName": "Muhammad Aieyan",
+                "familyName": "Channa",
+                "alternateName": ["Aieyan Channa"],
                 "url": "https://muhammadaieyanchanna.vercel.app",
+                "mainEntityOfPage": "https://muhammadaieyanchanna.vercel.app",
                 "jobTitle": "Petrochemical & Polymer Engineering Student",
-                "image": "https://muhammadaieyanchanna.vercel.app/icon.png",
-                "description": "Muhammad Aieyan Channa is a specialized Petrochemical Engineering student at NED University Karachi, focusing on material science and process kinetics.",
-                "knowsAbout": ["Polymer Kinetics", "Petrochemical Refining", "Catalysis", "Thermodynamics", "Process Dynamics"],
-                "memberOf": {
+                "affiliation": {
                   "@type": "Organization",
                   "name": "NED University of Engineering & Technology"
                 },
-                "alumniOf": {
-                  "@type": "CollegeOrUniversity",
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Polymer and Petrochemical Engineering Student"
+                },
+                "image": "https://muhammadaieyanchanna.vercel.app/icon.png",
+                "description": "Muhammad Aieyan Channa is a Polymer and Petrochemical Engineering student at NED University of Engineering & Technology in Karachi.",
+                "knowsAbout": ["Polymer Kinetics", "Petrochemical Refining", "Catalysis", "Thermodynamics", "Process Dynamics"],
+                "knowsLanguage": ["English", "Urdu"],
+                "memberOf": {
+                  "@type": "Organization",
                   "name": "NED University of Engineering & Technology"
                 },
                 "address": {
@@ -87,8 +124,14 @@ export default function RootLayout({
                   "addressCountry": "PK"
                 },
                 "sameAs": [
-                  "https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/",
-                  "https://github.com/muhammad-aieyan"
+                  "https://www.linkedin.com/in/muhammad-aieyan-channa-1434213a7/"
+                ],
+                "contactPoint": [
+                  {
+                    "@type": "ContactPoint",
+                    "contactType": "professional",
+                    "email": "mailto:Chanaieyan245@gmail.com"
+                  }
                 ]
               },
               {
@@ -114,16 +157,46 @@ export default function RootLayout({
                 "@type": "WebSite",
                 "name": "Muhammad Aieyan Channa",
                 "alternateName": ["Aieyan Channa Portfolio", "Muhammad Aieyan Channa NED"],
-                "url": "https://muhammadaieyanchanna.vercel.app"
+                "url": "https://muhammadaieyanchanna.vercel.app",
+                "inLanguage": "en-PK",
+                "publisher": {
+                  "@id": "https://muhammadaieyanchanna.vercel.app/#person"
+                }
               },
               {
                 "@context": "https://schema.org",
                 "@type": "ProfilePage",
                 "dateCreated": "2026-03-23T00:00:00Z",
                 "dateModified": new Date().toISOString(),
+                "inLanguage": "en-PK",
+                "about": {
+                  "@id": "https://muhammadaieyanchanna.vercel.app/#person"
+                },
                 "mainEntity": {
                   "@id": "https://muhammadaieyanchanna.vercel.app/#person"
                 }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "name": "Featured Engineering Projects",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "POLYMER_KINETICS"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "PETRO_REFINING_ANALYSIS"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "MATERIAL_PROPERTIES_LAB"
+                  }
+                ]
               },
               {
                 "@context": "https://schema.org",
@@ -134,7 +207,7 @@ export default function RootLayout({
                     "name": "Who is Muhammad Aieyan Channa?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Muhammad Aieyan Channa is a dedicated Petrochemical and Polymer Engineering student at NED University of Engineering & Technology in Karachi, Pakistan. He specializes in material science, process optimization, and reactor mechanics."
+                      "text": "Muhammad Aieyan Channa is a Polymer and Petrochemical Engineering student at NED University of Engineering and Technology, Karachi. He is focused on material science, process analysis, and practical engineering problem-solving through academic projects and hands-on learning."
                     }
                   },
                   {
@@ -142,7 +215,7 @@ export default function RootLayout({
                     "name": "Where does Muhammad Aieyan Channa study?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Muhammad Aieyan Channa is currently pursuing a Bachelor of Engineering (BE) in Polymer and Petrochemical Engineering at NED University of Engineering & Technology (2025–2029)."
+                      "text": "This portfolio states he is pursuing a Bachelor of Engineering (BE) in Polymer and Petrochemical Engineering at NED University of Engineering & Technology (2025-2029)."
                     }
                   },
                   {
@@ -150,7 +223,7 @@ export default function RootLayout({
                     "name": "What are the skills of Muhammad Aieyan Channa?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "His core engineering skills include Polymer Chemistry, Petrochemical Processes, Thermodynamics, Reactor Design, and Material Analysis. He also has professional experience in industrial inventory management and academic instruction."
+                      "text": "Listed skills include Polymer Chemistry, Petrochemical Processes, Thermodynamics, Reactor Design, and Material Analysis, along with prior experience in inventory management and teaching."
                     }
                   }
                 ]
