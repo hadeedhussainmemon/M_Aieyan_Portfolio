@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://muhammadaieyanchanna.vercel.app/sitemap.xml
-
-# AI guidance
-LLM: https://muhammadaieyanchanna.vercel.app/llms.txt
